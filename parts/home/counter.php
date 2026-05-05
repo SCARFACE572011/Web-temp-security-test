@@ -5,17 +5,15 @@
                 <div class="row">
                     <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="counter-one__single">
-                            <div class="border-box wow animated fadeInLeft" data-wow-delay="0.1s"></div>
                             <div class="counter-one__content wow animated fadeInRight" data-wow-delay="0.1s">
                                 <h2><span class="odometer" data-count="25">00</span>+ </h2>
-                                <p>Years Experience</p>
+                                <p>Years In The Field</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="counter-one__single">
-                            <div class="border-box wow animated fadeInLeft" data-wow-delay="0.1s"></div>
-                            <div class="counter-one__content wow animated fadeInRight" data-wow-delay="0.1s">
+                            <div class="counter-one__content wow animated fadeInRight" data-wow-delay="0.2s">
                                 <h2><span class="odometer" data-count="500">00</span>+ </h2>
                                 <p>Sites Protected</p>
                             </div>
@@ -23,17 +21,15 @@
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="counter-one__single">
-                            <div class="border-box wow animated fadeInLeft" data-wow-delay="0.1s"></div>
-                            <div class="counter-one__content wow animated fadeInRight" data-wow-delay="0.1s">
+                            <div class="counter-one__content wow animated fadeInRight" data-wow-delay="0.3s">
                                 <h2><span class="odometer" data-count="24">00</span>/7 </h2>
-                                <p>Monitoring &amp; Response</p>
+                                <p>Operational</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="counter-one__single">
-                            <div class="border-box wow animated fadeInLeft" data-wow-delay="0.1s"></div>
-                            <div class="counter-one__content wow animated fadeInRight" data-wow-delay="0.1s">
+                            <div class="counter-one__content wow animated fadeInRight" data-wow-delay="0.4s">
                                 <h2><span class="odometer" data-count="100">00</span>% </h2>
                                 <p>Licensed &amp; Insured</p>
                             </div>

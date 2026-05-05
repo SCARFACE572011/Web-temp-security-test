@@ -8,11 +8,15 @@
     <title><?php echo $head_title;?></title>
     <link rel="icon" type="image/svg+xml" href="assets/images/favicons/favicon.svg" />
     <link rel="apple-touch-icon" href="assets/images/favicons/favicon.svg" />
-    <meta name="description" content="Stratton Security Group — protecting people, assets, and peace of mind across California with proactive security services and smart technology." />
-    <meta name="keywords" content="Stratton Security, security guards, Los Angeles, California, commercial security, hotel security, estate security, security technology" />
+    <meta name="description" content="Stratton Security Group — proactive, armed and unarmed protection across California. Estates, commercial, hospitality, transportation, logistics, and integrated security technology." />
+    <meta name="keywords" content="Stratton Security, security guards, Los Angeles, California, armed security, executive protection, commercial security" />
+    <meta name="theme-color" content="#050608" />
 
+    <!-- Tactical type stack: stencil + display + mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Big+Shoulders+Stencil+Display:wght@600;700;800;900&family=Saira+Stencil+One&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />

@@ -1,4 +1,4 @@
-<?php $head_title="Stratton Security Group | Reliable Corporate Security in California"?>
+<?php $head_title="Stratton Security Group | Tactical Protection Across California"?>
 <?php require_once('parts/layout/top-layout.php'); ?>
 <?php require_once('parts/header/header.php'); ?>
 

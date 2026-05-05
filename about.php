@@ -1,7 +1,7 @@
 <?php $head_title="About | Stratton Security Group"?>
 <?php require_once('parts/layout/top-layout.php'); ?>
 <?php require_once('parts/header/header3.php'); ?>
-<?php $page_title = "Who We Are"; require_once('parts/page-title.php'); ?>
+<?php $page_title = "Inside the Unit"; require_once('parts/page-title.php'); ?>
 
         <section class="about-one stratton-about-page">
             <div class="container">
@@ -9,23 +9,23 @@
                     <div class="col-xl-6">
                         <div class="sec-title tg-heading-subheading animation-style2">
                             <div class="sec-title__tagline">
-                                <p class="tg-element-title">our mission</p>
+                                <p class="tg-element-title">// MISSION</p>
                                 <div class="border-box"></div>
                             </div>
-                            <h2 class="sec-title__title tg-element-title">Protecting people, assets, <br>and peace of <span>mind</span></h2>
+                            <h2 class="sec-title__title tg-element-title">PROTECTING PEOPLE, <br>ASSETS, &amp; <span>PEACE OF MIND</span></h2>
                         </div>
                         <div class="stratton-prose">
-                            <p>Stratton Security Group is a corporate-grade security partner serving California — from hospitals and college campuses to commercial buildings and private estates. We exist to deliver protection that doesn't just meet expectations; it exceeds them.</p>
-                            <p>Risk doesn't stand still, and neither do we. We pair seasoned officers with the latest in security technology so our clients can focus on running their business while we focus on keeping it safe.</p>
+                            <p>Stratton Security Group is a corporate-grade protection partner serving California — from hospitals and college campuses to commercial buildings and private estates. We exist to deliver protection that doesn't just meet expectations; it overwhelms them.</p>
+                            <p>Risk doesn't stand still. Neither do we. We pair seasoned officers — many with law enforcement and military backgrounds — with the latest in surveillance, access, and response technology so our clients can run their business while we keep it locked down.</p>
                         </div>
                     </div>
                     <div class="col-xl-6">
                         <div class="stratton-values">
-                            <h3>Our core values</h3>
+                            <h3>// CORE VALUES</h3>
                             <ul>
-                                <li><strong>Integrity</strong><span>We do what we say. Transparent communication with guards, management, and clients on every shift.</span></li>
-                                <li><strong>Vigilance</strong><span>Proactive — not reactive. Our officers are trained to anticipate, deter, and respond.</span></li>
-                                <li><strong>Helpfulness</strong><span>We are guardians, not gatekeepers. Service and security go hand in hand.</span></li>
+                                <li><strong>Integrity</strong><span>We do what we say. Transparent comms with officers, ops, and clients on every shift.</span></li>
+                                <li><strong>Vigilance</strong><span>Proactive — never reactive. Our officers anticipate, deter, and shut down threats.</span></li>
+                                <li><strong>Force</strong><span>When the situation requires escalation, our team is trained, equipped, and ready.</span></li>
                             </ul>
                         </div>
                     </div>
@@ -37,16 +37,16 @@
             <div class="container">
                 <div class="sec-title text-center tg-heading-subheading animation-style2">
                     <div class="sec-title__tagline">
-                        <p class="tg-element-title">why stratton</p>
+                        <p class="tg-element-title">// WHY STRATTON</p>
                         <div class="border-box"></div>
                     </div>
-                    <h2 class="sec-title__title tg-element-title">A partnership built on <span>trust</span></h2>
+                    <h2 class="sec-title__title tg-element-title">A PARTNERSHIP BUILT ON <span>TRUST</span></h2>
                 </div>
                 <div class="row stratton-why__grid">
-                    <div class="col-md-6 col-lg-3"><div class="stratton-why__item"><h4>Licensed &amp; Insured</h4><p>Every officer is fully licensed, background-checked, and insured.</p></div></div>
-                    <div class="col-md-6 col-lg-3"><div class="stratton-why__item"><h4>24/7 Monitoring</h4><p>Live monitoring, alarm response, and rapid escalation around the clock.</p></div></div>
-                    <div class="col-md-6 col-lg-3"><div class="stratton-why__item"><h4>Smart Technology</h4><p>Access control, IP-based video, and intrusion detection integrated with on-site teams.</p></div></div>
-                    <div class="col-md-6 col-lg-3"><div class="stratton-why__item"><h4>Tailored Programs</h4><p>Bespoke security plans built around your operations, not a one-size-fits-all checklist.</p></div></div>
+                    <div class="col-md-6 col-lg-3"><div class="stratton-why__item"><h4>Licensed &amp; Insured</h4><p>Every officer fully licensed, background-checked, and insured. No exceptions.</p></div></div>
+                    <div class="col-md-6 col-lg-3"><div class="stratton-why__item"><h4>24/7 Operations</h4><p>Live monitoring, alarm response, and rapid escalation around the clock.</p></div></div>
+                    <div class="col-md-6 col-lg-3"><div class="stratton-why__item"><h4>Smart Tech</h4><p>Access control, IP video, and intrusion detection — wired into the on-site team.</p></div></div>
+                    <div class="col-md-6 col-lg-3"><div class="stratton-why__item"><h4>Tailored Plans</h4><p>Bespoke programs built around your operations. No copy-paste checklists.</p></div></div>
                 </div>
             </div>
         </section>

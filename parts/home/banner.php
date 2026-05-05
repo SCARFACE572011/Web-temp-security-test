@@ -3,20 +3,15 @@
             <div class="swiper-container main-slider-one__carousel">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="image-layer" style="background-image: url(assets/images/slides/slider-v1-bg.jpg);"></div>
+                        <div class="image-layer"></div>
                         <div class="auto-container">
                             <div class="main-slider-one__single">
                                 <div class="main-slider-one__content">
-                                    <ul class="social-links">
-                                        <li><a href="#">Li.</a></li>
-                                        <li><a href="#">Fb.</a></li>
-                                        <li><a href="#">In.</a></li>
-                                    </ul>
                                     <div class="title">
                                         <h2>
-                                            Protecting <br>
-                                            <span class="icon-right-arrow-1"></span> people, assets, <br>
-                                            &amp; peace of mind
+                                            ZERO <br>
+                                            <span class="icon-right-arrow-1"></span> COMPROMISE. <br>
+                                            TOTAL CONTROL.
                                         </h2>
                                     </div>
                                 </div>
@@ -25,20 +20,15 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="image-layer" style="background-image: url(assets/images/slides/slider-v1-bg.jpg);"></div>
+                        <div class="image-layer"></div>
                         <div class="auto-container">
                             <div class="main-slider-one__single">
                                 <div class="main-slider-one__content">
-                                    <ul class="social-links">
-                                        <li><a href="#">Li.</a></li>
-                                        <li><a href="#">Fb.</a></li>
-                                        <li><a href="#">In.</a></li>
-                                    </ul>
                                     <div class="title">
                                         <h2>
-                                            Trained <br>
-                                            <span class="icon-right-arrow-1"></span> officers, <br>
-                                            smart technology
+                                            TRAINED. <br>
+                                            <span class="icon-right-arrow-1"></span> ARMED. <br>
+                                            ALWAYS ON.
                                         </h2>
                                     </div>
                                 </div>
@@ -47,20 +37,15 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="image-layer" style="background-image: url(assets/images/slides/slider-v1-bg.jpg);"></div>
+                        <div class="image-layer"></div>
                         <div class="auto-container">
                             <div class="main-slider-one__single">
                                 <div class="main-slider-one__content">
-                                    <ul class="social-links">
-                                        <li><a href="#">Li.</a></li>
-                                        <li><a href="#">Fb.</a></li>
-                                        <li><a href="#">In.</a></li>
-                                    </ul>
                                     <div class="title">
                                         <h2>
-                                            Integrity. <br>
-                                            <span class="icon-right-arrow-1"></span> Vigilance. <br>
-                                            Helpfulness.
+                                            INTEGRITY. <br>
+                                            <span class="icon-right-arrow-1"></span> VIGILANCE. <br>
+                                            FORCE.
                                         </h2>
                                     </div>
                                 </div>

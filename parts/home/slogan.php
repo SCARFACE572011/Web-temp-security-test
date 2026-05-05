@@ -5,13 +5,11 @@
                     <div class="container">
                         <div class="slogan-one__content-box">
                             <div class="text-box tg-heading-subheading animation-style2">
-                                <h2 class="tg-element-title">Ready to secure your site?</h2>
+                                <h2 class="tg-element-title">READY TO LOCK IT DOWN?</h2>
                             </div>
                             <div class="btn-box">
                                 <a class="thm-btn" href="contact.php">
-                                    <span class="txt">Request a Quote</span>
-                                    <span class="bdrl"></span>
-                                    <span class="bdrr"></span>
+                                    <span class="txt">Request Deployment</span>
                                 </a>
                             </div>
                         </div>
