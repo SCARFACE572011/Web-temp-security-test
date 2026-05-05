@@ -18,6 +18,10 @@
                             <p>Stratton Security Group is a corporate-grade protection partner serving California — from hospitals and college campuses to commercial buildings and private estates. We exist to deliver protection that doesn't just meet expectations; it overwhelms them.</p>
                             <p>Risk doesn't stand still. Neither do we. We pair seasoned officers — many with law enforcement and military backgrounds — with the latest in surveillance, access, and response technology so our clients can run their business while we keep it locked down.</p>
                         </div>
+                        <div class="stratton-about-imgwrap">
+                            <img src="assets/images/stratton/exec-protection.jpg" alt="Stratton operator on assignment" />
+                            <span class="stratton-about-imgwrap__tag">// PROTECTIVE DETAIL</span>
+                        </div>
                     </div>
                     <div class="col-xl-6">
                         <div class="stratton-values">
@@ -28,8 +32,27 @@
                                 <li><strong>Force</strong><span>When the situation requires escalation, our team is trained, equipped, and ready.</span></li>
                             </ul>
                         </div>
+                        <div class="stratton-about-stack">
+                            <figure>
+                                <img src="assets/images/stratton/soc-monitors.jpg" alt="Stratton 24/7 operations center" />
+                                <figcaption>// 24/7 OPERATIONS CENTER</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/images/stratton/officer-ready.jpg" alt="Stratton officer in uniform" />
+                                <figcaption>// OFFICER · READY</figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="stratton-strip" style="background-image: url(assets/images/stratton/city-overwatch.jpg);">
+            <div class="container">
+                <blockquote>
+                    <p>"We don't react to threats — we shut them down before they happen."</p>
+                    <cite>// STRATTON OPERATIONS DOCTRINE</cite>
+                </blockquote>
             </div>
         </section>
 

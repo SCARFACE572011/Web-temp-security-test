@@ -1,117 +1,36 @@
-<!--Start Gallery One -->
-<section class="gallery-one">
-            <div class="container">
-                <div class="sec-title tg-heading-subheading animation-style2">
-                    <div class="sec-title__tagline">
-                        <p class="tg-element-title">our gallery</p>
-                        <div class="border-box"></div>
-                    </div>
-                    <h2 class="sec-title__title tg-element-title">Latest Showcase
-                    </h2>
-                </div>
-                <div class="row">
-                    <!--Start Gallery One Single-->
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="0ms"
-                        data-wow-duration="1500ms">
-                        <div class="gallery-one__single">
-                            <div class="gallery-one__single-img">
-                                <div class="inner">
-                                    <img src="assets/images/gallery/gallery-v1-img1.jpg" alt="#">
-                                    <div class="btn-box">
-                                        <a href="#"><span class="icon-diagonal-arrow2"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Gallery One Single-->
-
-                    <!--Start Gallery One Single-->
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="100ms"
-                        data-wow-duration="1500ms">
-                        <div class="gallery-one__single">
-                            <div class="gallery-one__single-content">
-                                <div class="number-box">
-                                    01
-                                </div>
-                                <h2><a href="#">Product Design</a></h2>
-                                <p>Mestib ulligula to remove the projects completed
-                                    market reserch abusines high process</p>
-                                <div class="btn-box">
-                                    <a href="#">View Details <span class="icon-chevron"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Gallery One Single-->
-
-                    <!--Start Gallery One Single-->
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="200ms"
-                        data-wow-duration="1500ms">
-                        <div class="gallery-one__single">
-                            <div class="gallery-one__single-img">
-                                <div class="inner">
-                                    <img src="assets/images/gallery/gallery-v1-img2.jpg" alt="#">
-                                    <div class="btn-box">
-                                        <a href="#"><span class="icon-diagonal-arrow2"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Gallery One Single-->
-
-                    <!--Start Gallery One Single-->
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="0ms"
-                        data-wow-duration="1500ms">
-                        <div class="gallery-one__single">
-                            <div class="gallery-one__single-img">
-                                <div class="inner">
-                                    <img src="assets/images/gallery/gallery-v1-img3.jpg" alt="#">
-                                    <div class="btn-box">
-                                        <a href="#"><span class="icon-diagonal-arrow2"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Gallery One Single-->
-
-                    <!--Start Gallery One Single-->
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="100ms"
-                        data-wow-duration="1500ms">
-                        <div class="gallery-one__single">
-                            <div class="gallery-one__single-content">
-                                <div class="number-box">
-                                    02
-                                </div>
-                                <h2><a href="#">The Brightest</a></h2>
-                                <p>Mestib ulligula to remove the projects completed
-                                    market reserch abusines high process</p>
-                                <div class="btn-box">
-                                    <a href="#">View Details <span class="icon-chevron"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Gallery One Single-->
-
-                    <!--Start Gallery One Single-->
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="200ms"
-                        data-wow-duration="1500ms">
-                        <div class="gallery-one__single">
-                            <div class="gallery-one__single-img">
-                                <div class="inner">
-                                    <img src="assets/images/gallery/gallery-v1-img4.jpg" alt="#">
-                                    <div class="btn-box">
-                                        <a href="#"><span class="icon-diagonal-arrow2"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Gallery One Single-->
-                </div>
+<!--Start Field Operations Gallery -->
+<section class="stratton-field">
+    <div class="container">
+        <div class="sec-title text-center tg-heading-subheading animation-style2">
+            <div class="sec-title__tagline">
+                <p class="tg-element-title">// FIELD OPERATIONS</p>
+                <div class="border-box"></div>
             </div>
-        </section>
-        <!--End Gallery One -->
+            <h2 class="sec-title__title tg-element-title">EYES ON. <br>EVERYWHERE WE'RE <span>DEPLOYED</span></h2>
+        </div>
+
+        <div class="stratton-field__grid">
+            <a href="services.php" class="stratton-field__tile stratton-field__tile--lg" style="background-image: url(assets/images/stratton/officer-ready.jpg);">
+                <span class="stratton-field__meta">// 01 · ESCORT</span>
+                <span class="stratton-field__label">Protective Detail</span>
+            </a>
+            <a href="services.php" class="stratton-field__tile" style="background-image: url(assets/images/stratton/soc-monitors.jpg);">
+                <span class="stratton-field__meta">// 02 · SOC</span>
+                <span class="stratton-field__label">Operations Center</span>
+            </a>
+            <a href="services.php" class="stratton-field__tile" style="background-image: url(assets/images/stratton/exec-protection.jpg);">
+                <span class="stratton-field__meta">// 03 · EP</span>
+                <span class="stratton-field__label">Executive Protection</span>
+            </a>
+            <a href="services.php" class="stratton-field__tile" style="background-image: url(assets/images/stratton/server-soc.jpg);">
+                <span class="stratton-field__meta">// 04 · INFRA</span>
+                <span class="stratton-field__label">Critical Infrastructure</span>
+            </a>
+            <a href="services.php" class="stratton-field__tile stratton-field__tile--wide" style="background-image: url(assets/images/stratton/city-skyline.jpg);">
+                <span class="stratton-field__meta">// 05 · METRO</span>
+                <span class="stratton-field__label">Urban Patrols &amp; Transit</span>
+            </a>
+        </div>
+    </div>
+</section>
+<!--End Field Operations Gallery -->

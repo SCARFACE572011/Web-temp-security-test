@@ -445,7 +445,7 @@ section p, .stratton-prose p { color: #b8bec7; }
 .stratton-service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
+  gap: 28px;
   margin-top: 56px;
 }
 .stratton-service-card {
@@ -453,24 +453,49 @@ section p, .stratton-prose p { color: #b8bec7; }
   background: var(--gunmetal);
   border: 1px solid var(--line);
   border-left: 4px solid var(--red);
-  padding: 40px 28px 28px;
   transition: transform .2s ease, border-color .2s ease;
   clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%);
+  overflow: hidden;
 }
 .stratton-service-card:hover { transform: translateY(-6px); }
-.stratton-service-card:hover::after {
+.stratton-service-card__media {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  filter: contrast(1.1) saturate(0.7);
+}
+.stratton-service-card__media::before {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(209,26,26,0.08), transparent 60%);
-  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(5,6,8,0.35) 0%, rgba(5,6,8,0.85) 100%),
+    radial-gradient(ellipse at 70% 30%, rgba(209,26,26,0.4) 0%, transparent 60%),
+    var(--scanline);
+  transition: background .3s ease;
+}
+.stratton-service-card:hover .stratton-service-card__media::before {
+  background:
+    linear-gradient(180deg, rgba(5,6,8,0.25) 0%, rgba(5,6,8,0.7) 100%),
+    radial-gradient(ellipse at 70% 30%, rgba(209,26,26,0.55) 0%, transparent 60%),
+    var(--scanline);
+}
+.stratton-service-card__media::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+  height: 4px;
+  background: var(--hazard);
+  opacity: 0.85;
 }
 .stratton-service-card__num {
   position: absolute; top: 14px; right: 24px;
   font-family: var(--stencil);
   font-weight: 800;
   color: var(--red-bright);
-  font-size: 28px;
+  font-size: 32px;
   letter-spacing: 0.04em;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+  z-index: 2;
 }
+.stratton-service-card__body { padding: 28px 28px 28px; }
 .stratton-service-card h3 {
   color: #fff;
   font-family: var(--stencil);
@@ -480,6 +505,190 @@ section p, .stratton-prose p { color: #b8bec7; }
   margin-bottom: 14px;
 }
 .stratton-service-card p { color: #8a939d; font-size: 14px; line-height: 1.7; margin: 0; }
+
+/* ---- Field Operations gallery (home) ---- */
+.stratton-field { padding: 110px 0; background: var(--black); position: relative; }
+.stratton-field::before {
+  content: ""; position: absolute; inset: 0;
+  background: var(--grid);
+  background-size: 32px 32px;
+  opacity: 0.3; pointer-events: none;
+}
+.stratton-field .sec-title { position: relative; z-index: 2; }
+.stratton-field .sec-title__title { color: #fff !important; }
+.stratton-field__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 220px;
+  gap: 16px;
+  margin-top: 56px;
+  position: relative; z-index: 2;
+}
+.stratton-field__tile {
+  position: relative;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 20px;
+  background-color: var(--gunmetal);
+  background-size: cover;
+  background-position: center;
+  text-decoration: none !important;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  filter: contrast(1.1) saturate(0.7);
+  transition: transform .25s ease;
+  clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
+}
+.stratton-field__tile::before {
+  content: ""; position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, rgba(5,6,8,0.05) 0%, rgba(5,6,8,0.85) 100%),
+    radial-gradient(ellipse at 30% 30%, rgba(209,26,26,0.35) 0%, transparent 65%),
+    var(--scanline);
+  transition: background .3s ease;
+}
+.stratton-field__tile::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+  height: 3px;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+.stratton-field__tile:hover { transform: translateY(-4px); }
+.stratton-field__tile:hover::before {
+  background:
+    linear-gradient(180deg, rgba(5,6,8,0.0) 0%, rgba(5,6,8,0.6) 100%),
+    radial-gradient(ellipse at 30% 30%, rgba(209,26,26,0.55) 0%, transparent 65%),
+    var(--scanline);
+}
+.stratton-field__tile:hover::after { transform: scaleX(1); }
+.stratton-field__tile--lg { grid-column: span 2; grid-row: span 2; }
+.stratton-field__tile--wide { grid-column: span 2; }
+.stratton-field__meta {
+  position: relative; z-index: 2;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--red-bright);
+  letter-spacing: 0.32em;
+  margin-bottom: 6px;
+}
+.stratton-field__label {
+  position: relative; z-index: 2;
+  font-family: var(--stencil);
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.stratton-field__tile--lg .stratton-field__label { font-size: 32px; }
+
+@media (max-width: 991px) {
+  .stratton-field__grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
+  .stratton-field__tile--lg { grid-column: span 2; grid-row: span 2; }
+  .stratton-field__tile--wide { grid-column: span 2; }
+  .stratton-field__tile--lg .stratton-field__label { font-size: 24px; }
+}
+
+/* ---- About-page imagery ---- */
+.stratton-about-imgwrap {
+  position: relative;
+  margin-top: 32px;
+  border-left: 4px solid var(--red);
+  overflow: hidden;
+  clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%);
+}
+.stratton-about-imgwrap img {
+  display: block; width: 100%; height: 280px; object-fit: cover;
+  filter: contrast(1.1) saturate(0.7) brightness(0.85);
+}
+.stratton-about-imgwrap::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, transparent 40%, rgba(5,6,8,0.85) 100%),
+    radial-gradient(ellipse at 30% 30%, rgba(209,26,26,0.32) 0%, transparent 60%),
+    var(--scanline);
+  pointer-events: none;
+}
+.stratton-about-imgwrap__tag {
+  position: absolute; bottom: 18px; left: 22px; z-index: 2;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--red-bright);
+  letter-spacing: 0.32em;
+}
+
+.stratton-about-stack {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 12px; margin-top: 24px;
+}
+.stratton-about-stack figure {
+  position: relative; margin: 0; overflow: hidden;
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+  border-bottom: 3px solid var(--red);
+}
+.stratton-about-stack figure img {
+  display: block; width: 100%; height: 160px; object-fit: cover;
+  filter: contrast(1.1) saturate(0.7) brightness(0.8);
+}
+.stratton-about-stack figure::before {
+  content: ""; position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, transparent 40%, rgba(5,6,8,0.9) 100%),
+    radial-gradient(ellipse at 30% 30%, rgba(209,26,26,0.3) 0%, transparent 65%),
+    var(--scanline);
+  pointer-events: none;
+}
+.stratton-about-stack figcaption {
+  position: absolute; bottom: 12px; left: 14px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--red-bright);
+  letter-spacing: 0.28em;
+  z-index: 2;
+}
+
+/* ---- Quote strip with bg image ---- */
+.stratton-strip {
+  position: relative;
+  padding: 100px 0;
+  background-color: var(--black);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.stratton-strip::before {
+  content: ""; position: absolute; inset: 0;
+  background:
+    linear-gradient(135deg, rgba(122,13,13,0.85) 0%, rgba(5,6,8,0.92) 100%),
+    var(--scanline);
+}
+.stratton-strip::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+  height: 6px; background: var(--hazard);
+}
+.stratton-strip .container { position: relative; z-index: 2; }
+.stratton-strip blockquote {
+  max-width: 880px; margin: 0 auto; text-align: center;
+  border: 0; padding: 0;
+}
+.stratton-strip blockquote p {
+  font-family: var(--stencil);
+  font-size: clamp(28px, 4vw, 52px);
+  color: #fff;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+.stratton-strip blockquote cite {
+  display: block;
+  font-family: var(--mono);
+  font-style: normal;
+  font-size: 12px;
+  color: var(--red-bright);
+  letter-spacing: 0.32em;
+}
 
 /* ---- Contact page ---- */
 .stratton-contact { padding: 100px 0; background: var(--black); }

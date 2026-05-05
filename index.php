@@ -5,6 +5,7 @@
 <?php require_once('parts/home/banner.php'); ?>
 <?php require_once('parts/home/about.php'); ?>
 <?php require_once('parts/home/service.php'); ?>
+<?php require_once('parts/home/gallery.php'); ?>
 <?php require_once('parts/home/counter.php'); ?>
 <?php require_once('parts/home/slogan.php'); ?>
 
