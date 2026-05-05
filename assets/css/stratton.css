@@ -1,0 +1,120 @@
+/* Stratton Security Group — brand overrides */
+:root {
+  --stratton-navy: #0b1d2e;
+  --stratton-navy-2: #102b44;
+  --stratton-gold: #c9a24a;
+  --stratton-ink: #0d1622;
+  --stratton-mute: #5b6a78;
+  --stratton-cloud: #f4f6f8;
+  --stratton-line: rgba(255,255,255,.16);
+}
+
+/* Logo (replaces image) */
+.stratton-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none !important;
+  color: inherit !important;
+  font-family: 'DM Sans', sans-serif;
+}
+.stratton-logo__mark {
+  width: 44px; height: 44px; flex: 0 0 44px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--stratton-navy);
+  color: var(--stratton-gold);
+  font-weight: 800; font-size: 22px;
+  border: 2px solid var(--stratton-gold);
+  letter-spacing: 0.02em;
+  border-radius: 2px;
+}
+.stratton-logo__text { display: inline-flex; flex-direction: column; line-height: 1; text-align: left; }
+.stratton-logo__text strong {
+  font-size: 18px; font-weight: 800; letter-spacing: 0.16em; color: var(--stratton-ink);
+}
+.stratton-logo__text em { font-style: normal; font-size: 11px; letter-spacing: 0.24em; color: var(--stratton-mute); margin-top: 4px; text-transform: uppercase; }
+.stratton-logo--footer .stratton-logo__text strong { color: var(--stratton-cloud); }
+.stratton-logo--footer .stratton-logo__text em { color: rgba(255,255,255,.55); }
+
+/* Header contact strip */
+.stratton-header__contact {
+  display: flex; gap: 24px; align-items: center; list-style: none; margin: 0; padding: 0;
+}
+.stratton-header__contact a { color: var(--stratton-ink); font-weight: 600; text-decoration: none; }
+.stratton-header__contact .stratton-cta {
+  background: var(--stratton-navy); color: #fff; padding: 12px 22px; border-radius: 2px;
+  border: 1px solid var(--stratton-navy);
+}
+.stratton-header__contact .stratton-cta:hover { background: var(--stratton-gold); border-color: var(--stratton-gold); color: var(--stratton-ink); }
+
+/* Hero */
+.stratton-hero .image-layer {
+  background-color: var(--stratton-navy);
+  background-blend-mode: multiply;
+}
+.stratton-hero .image-layer::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(11,29,46,.85) 0%, rgba(11,29,46,.55) 60%, rgba(11,29,46,.85) 100%);
+  pointer-events: none;
+}
+
+/* Centered prose helpers */
+.stratton-about-lede { max-width: 780px; margin: 24px auto 0; text-align: center; color: var(--stratton-mute); }
+.stratton-mt-32 { margin-top: 32px; }
+.stratton-mt-24 { margin-top: 24px; }
+
+/* About page */
+.stratton-prose p { color: var(--stratton-mute); margin-bottom: 16px; line-height: 1.7; }
+.stratton-values { background: var(--stratton-cloud); padding: 40px; border-left: 4px solid var(--stratton-gold); }
+.stratton-values h3 { font-family: 'DM Sans', sans-serif; font-weight: 800; margin-bottom: 24px; color: var(--stratton-ink); }
+.stratton-values ul { list-style: none; padding: 0; margin: 0; }
+.stratton-values li { display: flex; flex-direction: column; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,.08); }
+.stratton-values li:last-child { border-bottom: 0; }
+.stratton-values li strong { color: var(--stratton-navy); font-size: 18px; margin-bottom: 4px; letter-spacing: 0.04em; }
+.stratton-values li span { color: var(--stratton-mute); }
+
+.stratton-why { padding: 80px 0; background: var(--stratton-cloud); }
+.stratton-why__grid { margin-top: 48px; }
+.stratton-why__item { background: #fff; padding: 28px; height: 100%; border-top: 3px solid var(--stratton-gold); margin-bottom: 24px; }
+.stratton-why__item h4 { color: var(--stratton-navy); font-weight: 700; margin-bottom: 8px; }
+.stratton-why__item p { color: var(--stratton-mute); margin: 0; }
+
+/* Services page grid */
+.stratton-services-page { padding: 80px 0; }
+.stratton-service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 48px; }
+.stratton-service-card { position: relative; background: #fff; border: 1px solid rgba(0,0,0,.08); padding: 36px 28px 28px; transition: transform .2s ease, box-shadow .2s ease; }
+.stratton-service-card:hover { transform: translateY(-4px); box-shadow: 0 24px 48px rgba(11,29,46,.12); }
+.stratton-service-card__num { position: absolute; top: 18px; right: 24px; font-weight: 800; color: var(--stratton-gold); font-size: 20px; letter-spacing: 0.04em; }
+.stratton-service-card h3 { color: var(--stratton-navy); font-weight: 800; margin-bottom: 12px; font-size: 22px; }
+.stratton-service-card p { color: var(--stratton-mute); margin: 0; line-height: 1.6; }
+
+/* Contact page */
+.stratton-contact { padding: 80px 0; }
+.stratton-contact__details h3 { color: var(--stratton-navy); font-weight: 800; margin-bottom: 12px; }
+.stratton-contact__details > p { color: var(--stratton-mute); margin-bottom: 32px; }
+.stratton-contact__list { list-style: none; padding: 0; margin: 0 0 32px; }
+.stratton-contact__list li { display: flex; gap: 16px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,.08); }
+.stratton-contact__list li > span { width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; background: var(--stratton-navy); color: var(--stratton-gold); border-radius: 50%; flex: 0 0 44px; }
+.stratton-contact__list p { font-size: 12px; color: var(--stratton-mute); text-transform: uppercase; letter-spacing: 0.16em; margin: 0 0 4px; }
+.stratton-contact__list a { color: var(--stratton-ink); text-decoration: none; }
+.stratton-contact__list a:hover { color: var(--stratton-gold); }
+.stratton-contact__map iframe { width: 100%; height: 280px; border: 0; }
+.stratton-contact__note { font-size: 12px; color: var(--stratton-mute); margin-top: 16px; }
+.stratton-contact__note code { background: var(--stratton-cloud); padding: 2px 6px; border-radius: 2px; }
+
+/* 404 */
+.stratton-404 { padding: 120px 0; text-align: center; }
+.stratton-404 h1 { font-size: 120px; font-weight: 900; color: var(--stratton-navy); margin: 0; letter-spacing: -0.04em; }
+.stratton-404 h2 { color: var(--stratton-ink); margin-bottom: 16px; }
+.stratton-404 p { color: var(--stratton-mute); margin-bottom: 32px; }
+
+/* Footer */
+.stratton-footer .stratton-logo--footer { justify-content: center; }
+
+/* Mobile niceties */
+@media (max-width: 991px) {
+  .stratton-header__contact { gap: 12px; }
+  .stratton-header__contact li:first-child { display: none; }
+  .stratton-logo__text strong { font-size: 16px; letter-spacing: 0.12em; }
+  .stratton-logo__text em { font-size: 10px; }
+}
