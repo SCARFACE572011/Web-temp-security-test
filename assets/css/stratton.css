@@ -839,10 +839,10 @@ section p, .stratton-prose p { color: #b8bec7; }
 .stratton-logo:has(.stratton-logo__img) .stratton-logo__mark { display: none; }
 
 .stratton-logo__img {
-  width: 58px;
-  height: 58px;
+  width: 72px;
+  height: 72px;
   object-fit: contain;
-  flex: 0 0 58px;
+  flex: 0 0 72px;
   border-radius: 50%;
   animation: logoGlow 4s ease-in-out infinite;
   filter: drop-shadow(0 0 6px rgba(255,255,255,0.15));
@@ -1055,7 +1055,7 @@ section p, .stratton-prose p { color: #b8bec7; }
 @media (max-width: 767px) {
   .stratton-hero-logo-badge img { width: 80px; height: 80px; }
   .stratton-hero-tagline { font-size: 10px; letter-spacing: 0.24em; }
-  .stratton-logo__img { width: 46px; height: 46px; }
+  .stratton-logo__img { width: 54px; height: 54px; flex: 0 0 54px; }
 }
 
 /* ============================================================
