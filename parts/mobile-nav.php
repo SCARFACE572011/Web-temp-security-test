@@ -5,26 +5,24 @@
                 <i class="icon-plus"></i>
             </span>
             <div class="logo-box">
-                <a href="index.php" aria-label="logo image">
-                    <img src="assets/images/resources/logo-1.png" alt="" />
+                <a href="index.php" aria-label="Stratton Security Group">
+                    <img src="assets/images/stratton/stratton-logo.png" alt="Stratton Security Group" style="width:56px;height:56px;object-fit:contain;" />
                 </a>
             </div>
             <div class="mobile-nav__container"></div>
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:info@example.com">info@example.com</a>
+                    <a href="mailto:Info@StrattonSecurityGroup.com">Info@StrattonSecurityGroup.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:123456789">444 000 777 66</a>
+                    <a href="tel:+14244405554">(424) 440-5554</a>
                 </li>
             </ul>
             <div class="mobile-nav__social">
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-facebook-square"></a>
-                <a href="#" class="fab fa-pinterest-p"></a>
-                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                <a href="#" class="fab fa-facebook-square" aria-label="Facebook"></a>
             </div>
         </div>
     </div>

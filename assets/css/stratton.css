@@ -1057,3 +1057,341 @@ section p, .stratton-prose p { color: #b8bec7; }
   .stratton-hero-tagline { font-size: 10px; letter-spacing: 0.24em; }
   .stratton-logo__img { width: 46px; height: 46px; }
 }
+
+/* ============================================================
+   ENHANCED MOBILE OPTIMIZATION
+   ============================================================ */
+
+/* Small phones ≤ 575px */
+@media (max-width: 575px) {
+  .stratton-hero { min-height: 88vh; }
+  .stratton-hero .title h2 { font-size: clamp(28px, 11vw, 50px) !important; line-height: 0.96 !important; }
+  .stratton-hero .main-slider-one__content::before { font-size: 8px; letter-spacing: 0.14em; }
+  .stratton-hero-logo-badge img { width: 64px; height: 64px; }
+  .stratton-hero-tagline { font-size: 9px; letter-spacing: 0.16em; }
+
+  .about-one { padding: 64px 0; }
+  .stratton-about-lede { font-size: 15px; padding: 0 4px; }
+
+  .services-one { padding: 64px 0 36px; }
+  .services-one__right-content .outer-box {
+    padding: 18px 14px;
+    clip-path: none !important;
+  }
+  .services-one__right-content h2 { font-size: 18px !important; }
+  .services-one__right-content .icon-box {
+    width: 44px; height: 44px; font-size: 18px; flex: 0 0 44px;
+  }
+
+  .counter-one { padding: 56px 0; }
+  .counter-one__single h2 { font-size: 38px !important; }
+
+  .stratton-field { padding: 64px 0; }
+  .stratton-field__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 140px;
+    gap: 8px;
+  }
+  .stratton-field__tile--lg,
+  .stratton-field__tile--wide { grid-column: span 2; grid-row: span 1; }
+  .stratton-field__label { font-size: 14px; }
+  .stratton-field__tile--lg .stratton-field__label { font-size: 16px; }
+  .stratton-field__tile { clip-path: none !important; }
+
+  .slogan-one { padding: 72px 0; }
+
+  .stratton-service-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 36px; }
+  .stratton-service-card { clip-path: none !important; }
+  .stratton-service-card__media { height: 180px; }
+
+  .stratton-why { padding: 64px 0; }
+  .stratton-why__item { clip-path: none !important; margin-bottom: 16px; }
+
+  .stratton-about-stack { grid-template-columns: 1fr; }
+  .stratton-about-imgwrap { clip-path: none !important; }
+
+  .thm-btn { clip-path: none !important; padding: 14px 24px !important; font-size: 14px !important; }
+  .stratton-cta { clip-path: none !important; }
+  .stratton-hero-cta .thm-btn { clip-path: none !important; }
+
+  .page-header { padding: 100px 0 60px; }
+  .page-header__inner h2 { font-size: clamp(30px, 9vw, 56px) !important; }
+
+  .stratton-404 h1 { font-size: 100px; }
+  .stratton-strip { padding: 72px 0; background-attachment: scroll !important; }
+  .stratton-strip blockquote p { font-size: clamp(20px, 6vw, 34px); }
+
+  .stratton-about-page { padding: 64px 0; }
+  .stratton-contact { padding: 64px 0; }
+  .contact-one__form { margin-top: 40px !important; }
+
+  .stratton-values { padding: 28px 24px; clip-path: none !important; }
+}
+
+/* Mid-small phones 576–767px */
+@media (min-width: 576px) and (max-width: 767px) {
+  .stratton-field__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 160px;
+    gap: 10px;
+  }
+  .stratton-field__tile--lg { grid-column: span 2; grid-row: span 1; }
+  .stratton-field__tile--wide { grid-column: span 2; }
+  .stratton-field__tile { clip-path: none !important; }
+  .stratton-service-grid { grid-template-columns: 1fr; gap: 18px; }
+  .stratton-service-card { clip-path: none !important; }
+  .stratton-strip { background-attachment: scroll !important; }
+}
+
+/* Touch targets for all mobile & tablet */
+@media (max-width: 991px) {
+  .thm-btn {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .stratton-contact__list li { padding: 20px 0; }
+  .stratton-header__contact .stratton-cta { padding: 12px 18px; }
+  .stratton-values li { padding: 20px 0; }
+  .services-one__right-content .outer-box { clip-path: none !important; }
+  .stratton-why__item { clip-path: none !important; }
+}
+
+/* ============================================================
+   GRADIENT & COLOR DEPTH ENHANCEMENTS
+   ============================================================ */
+
+/* About: deeper dark gradient with subtle warm tint */
+.about-one {
+  background: linear-gradient(145deg, #040507 0%, #08090e 45%, #050608 100%) !important;
+}
+
+/* Services section: navy-tinted depth gradient */
+.services-one {
+  background: linear-gradient(155deg, #0f1520 0%, #0c1018 40%, var(--gunmetal) 100%) !important;
+}
+
+/* Counter: animated rich red gradient */
+@keyframes counterGradient {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
+}
+.counter-one {
+  background: linear-gradient(
+    135deg,
+    #6b0000 0%,
+    var(--red) 30%,
+    #c41a1a 60%,
+    #8a0000 100%
+  ) !important;
+  background-size: 300% 300% !important;
+  animation: counterGradient 10s ease infinite;
+}
+
+/* Gallery section: subtle cool-dark gradient */
+.stratton-field {
+  background: linear-gradient(180deg, #040507 0%, #070a0e 55%, #040507 100%) !important;
+}
+
+/* Footer: deeper gradient */
+.stratton-footer {
+  background: linear-gradient(180deg, #111720 0%, #0a0d12 100%) !important;
+}
+
+/* Service cards (services page): gradient card background */
+.stratton-service-card {
+  background: linear-gradient(145deg, #14171c 0%, #0d1119 100%) !important;
+}
+
+/* Why section (about page): dark navy gradient */
+.stratton-why {
+  background: linear-gradient(155deg, #111720 0%, #0c1018 50%, var(--gunmetal) 100%) !important;
+  position: relative;
+}
+.stratton-why::after {
+  content: "";
+  position: absolute; top: 0; right: 0;
+  width: 45%; height: 100%;
+  background: radial-gradient(ellipse at 100% 30%, rgba(209,26,26,0.07) 0%, transparent 60%);
+  pointer-events: none;
+}
+.stratton-why .container { position: relative; z-index: 2; }
+
+/* Values box (about page) */
+.stratton-values {
+  background: linear-gradient(145deg, #1c2130 0%, #141820 100%) !important;
+}
+
+/* Contact section radial glow */
+.stratton-contact {
+  position: relative;
+}
+.stratton-contact::after {
+  content: "";
+  position: absolute; top: 0; left: 0;
+  width: 40%; height: 55%;
+  background: radial-gradient(ellipse at 0% 0%, rgba(209,26,26,0.06) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+.stratton-contact > .container { position: relative; z-index: 2; }
+
+/* Enhanced slogan overlay */
+.slogan-one::before {
+  background:
+    linear-gradient(135deg, rgba(95,7,7,0.93) 0%, rgba(5,6,8,0.88) 45%, rgba(12,5,5,0.94) 100%),
+    var(--scanline) !important;
+}
+
+/* Page header rich gradient */
+.page-header {
+  background: linear-gradient(145deg, #111720 0%, #0d1017 50%, var(--gunmetal) 100%) !important;
+}
+.page-header::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 25% 60%, rgba(209,26,26,0.11) 0%, transparent 55%);
+  pointer-events: none;
+  z-index: 0;
+}
+.page-header .page-header__inner { position: relative; z-index: 2; }
+
+/* Why items: gradient dark bg */
+.stratton-why__item {
+  background: linear-gradient(145deg, var(--slate), #1a1f2b) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ============================================================
+   ADDITIONAL ANIMATIONS
+   ============================================================ */
+
+/* Hero slide CTA button */
+.stratton-hero-cta {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroTaglineIn 0.9s ease 1.5s forwards;
+  margin-top: 32px;
+  display: inline-block;
+}
+.swiper-slide-active .stratton-hero-cta {
+  animation: heroTaglineIn 0.9s ease 1.0s forwards;
+}
+.swiper-slide:not(.swiper-slide-active) .stratton-hero-cta { opacity: 0; }
+
+/* Typing cursor blink on hero tagline */
+.stratton-hero-tagline::after {
+  content: "_";
+  animation: blink 1.1s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* CTA button pulse glow in slogan section */
+@keyframes ctaGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(209,26,26,0); }
+  50%       { box-shadow: 0 0 28px 6px rgba(209,26,26,0.32); }
+}
+.slogan-one .thm-btn { animation: ctaGlow 3s ease-in-out infinite; }
+
+/* Service card hover glow pulse */
+@keyframes cardGlowPulse {
+  0%, 100% { box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+  50%       { box-shadow: 0 12px 48px rgba(209,26,26,0.2), 0 4px 16px rgba(0,0,0,0.5); }
+}
+.stratton-service-card:hover {
+  animation: cardGlowPulse 2.2s ease-in-out infinite;
+}
+
+/* Why item hover: top bar shimmer */
+@keyframes shimmerBar {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+.stratton-why__item::after {
+  content: "";
+  position: absolute; top: -3px; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--red-deep), var(--red-bright), var(--red-deep));
+  background-size: 200% 100%;
+  animation: shimmerBar 2.5s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.stratton-why__item:hover::after { opacity: 1; }
+.stratton-why__item:hover {
+  border-top-color: var(--red-bright) !important;
+  box-shadow: 0 4px 32px rgba(209,26,26,0.14);
+}
+
+/* Counter numbers glow pulse */
+@keyframes numGlow {
+  0%, 100% { text-shadow: 0 0 0 transparent; }
+  50%       { text-shadow: 0 0 32px rgba(255,255,255,0.22); }
+}
+.counter-one__single h2 { animation: numGlow 3s ease-in-out infinite; }
+
+/* Field tile glow on hover */
+.stratton-field__tile:hover {
+  box-shadow: 0 8px 40px rgba(209,26,26,0.18);
+}
+
+/* Services outer-box: left-border accent + shadow on hover */
+.services-one__right-content .outer-box:hover {
+  border-left-color: var(--red-bright) !important;
+  box-shadow: -4px 0 20px rgba(209,26,26,0.14);
+}
+
+/* About image: subtle zoom on hover */
+.stratton-about-imgwrap {
+  overflow: hidden;
+}
+.stratton-about-imgwrap img {
+  transition: transform .5s cubic-bezier(0.22,1,0.36,1), filter .4s ease;
+}
+.stratton-about-imgwrap:hover img { transform: scale(1.04); }
+
+/* About image stack: zoom on hover */
+.stratton-about-stack figure { overflow: hidden; }
+.stratton-about-stack figure img {
+  transition: transform .5s cubic-bezier(0.22,1,0.36,1);
+}
+.stratton-about-stack figure:hover img { transform: scale(1.06); }
+
+/* Contact form: focus glow */
+.contact-one__form input:focus,
+.contact-one__form textarea:focus {
+  box-shadow: 0 0 0 2px rgba(209,26,26,0.24) !important;
+}
+
+/* Footer social links: lift on hover */
+.footer-one__social-links ul li a {
+  display: inline-block;
+  transition: color .2s ease, transform .2s ease;
+}
+.footer-one__social-links ul li a:hover { transform: translateY(-3px) scale(1.15); }
+
+/* Mobile nav drawer: gradient background */
+.mobile-nav__content {
+  background: linear-gradient(145deg, var(--gunmetal) 0%, #0a0e14 100%) !important;
+}
+
+/* Scroll-reveal for service cards and why items (sr-scale variant) */
+.sr-scale {
+  opacity: 0;
+  transform: translateY(24px) scale(0.97);
+  transition:
+    opacity 0.65s cubic-bezier(0.22,1,0.36,1),
+    transform 0.65s cubic-bezier(0.22,1,0.36,1);
+}
+.sr-scale.sr-visible { opacity: 1; transform: translateY(0) scale(1); }
+
+/* Floating gradient orb in hero particles — larger glow radii */
+.stratton-hero-particles::before {
+  background: radial-gradient(circle, rgba(209,26,26,0.20) 0%, transparent 70%);
+}
+.stratton-hero-particles::after {
+  background: radial-gradient(circle, rgba(209,26,26,0.13) 0%, transparent 65%);
+}

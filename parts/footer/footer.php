@@ -19,21 +19,21 @@
                                 <li>
                                     <div class="icon-box"><span class="icon-ringing"></span></div>
                                     <div class="text-box">
-                                        <p>// 24/7 OPS LINE</p>
+                                        <p>AVAILABLE 24/7</p>
                                         <h3><a href="tel:+14244405554">(424) 440-5554</a></h3>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="icon-box"><span class="icon-message"></span></div>
                                     <div class="text-box">
-                                        <p>// COMMS</p>
+                                        <p>EMAIL US</p>
                                         <h3><a href="mailto:Info@StrattonSecurityGroup.com">Info@StrattonSecurityGroup.com</a></h3>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="icon-box"><span class="icon-placeholder"></span></div>
                                     <div class="text-box">
-                                        <p>// HQ</p>
+                                        <p>OUR OFFICE</p>
                                         <h3>2029 Century Park E,<br>Los Angeles, CA</h3>
                                     </div>
                                 </li>
@@ -58,11 +58,11 @@
                         </div>
 
                         <div class="footer-one__copyright">
-                            <p>© <span id="stratton-year">2026</span> · Stratton Security Group · Licensed &amp; Insured · CA</p>
+                            <p>© <span id="stratton-year">2026</span> · Stratton Security Group · Licensed &amp; Insured · California</p>
                         </div>
 
                         <div class="scroll-to-top-box">
-                            <a href="#" data-target="html" class="scroll-to-target scroll-to-top">↑ Top</a>
+                            <a href="#" data-target="html" class="scroll-to-target scroll-to-top">↑ Back to Top</a>
                             <div class="border-box"></div>
                         </div>
                     </div>

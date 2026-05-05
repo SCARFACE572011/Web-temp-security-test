@@ -10,18 +10,18 @@
                 <div class="about-one__inner">
                     <div class="sec-title text-center tg-heading-subheading animation-style2">
                         <div class="sec-title__tagline">
-                            <p class="tg-element-title">// MISSION BRIEF</p>
+                            <p class="tg-element-title">ABOUT US</p>
                             <div class="border-box"></div>
                         </div>
-                        <h2 class="sec-title__title tg-element-title">WE PROTECT WHAT <br>
-                            OTHERS <span>CAN'T</span></h2>
+                        <h2 class="sec-title__title tg-element-title">PROTECTING WHAT <br>
+                            MATTERS <span>MOST</span></h2>
                     </div>
                     <div class="stratton-about-lede">
-                        <p>Stratton Security Group runs proactive, intelligence-driven protection programs across California. Hardened officers. Tactical response. Surveillance and access systems integrated into a single operating picture. We don't react to threats — we shut them down before they happen.</p>
+                        <p>Stratton Security Group delivers professional, intelligence-driven security programs across California. Our experienced officers and advanced surveillance technology work together to keep your people, property, and assets safe — around the clock, every day of the year.</p>
                     </div>
                     <div class="btn-box stratton-mt-32">
                         <a class="thm-btn" href="about.php">
-                            <span class="txt">Inside the Unit</span>
+                            <span class="txt">Learn About Us</span>
                         </a>
                     </div>
                 </div>

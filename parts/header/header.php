@@ -25,8 +25,8 @@
 
                                 <div class="main-header-one__right">
                                     <ul class="stratton-header__contact">
-                                        <li><a href="tel:+14244405554">// (424) 440-5554</a></li>
-                                        <li><a class="thm-btn stratton-cta" href="contact.php"><span class="txt">Deploy a Team</span></a></li>
+                                        <li><a href="tel:+14244405554">(424) 440-5554</a></li>
+                                        <li><a class="thm-btn stratton-cta" href="contact.php"><span class="txt">Get Protected</span></a></li>
                                     </ul>
                                 </div>
                             </div>

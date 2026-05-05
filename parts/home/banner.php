@@ -15,12 +15,15 @@
                                     </div>
                                     <div class="title stratton-slide-title">
                                         <h2>
-                                            ZERO <br>
-                                            <span class="icon-right-arrow-1"></span> COMPROMISE. <br>
-                                            TOTAL CONTROL.
+                                            YOUR SAFETY.<br>
+                                            <span class="icon-right-arrow-1"></span> OUR MISSION.<br>
+                                            EVERY DAY.
                                         </h2>
                                     </div>
                                     <p class="stratton-hero-tagline">// In God We Trust</p>
+                                    <div class="stratton-hero-cta">
+                                        <a class="thm-btn" href="contact.php"><span class="txt">Request a Free Consultation</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -36,12 +39,15 @@
                                     </div>
                                     <div class="title stratton-slide-title">
                                         <h2>
-                                            TRAINED. <br>
-                                            <span class="icon-right-arrow-1"></span> ARMED. <br>
+                                            TRAINED.<br>
+                                            <span class="icon-right-arrow-1"></span> EXPERIENCED.<br>
                                             ALWAYS ON.
                                         </h2>
                                     </div>
                                     <p class="stratton-hero-tagline">// In God We Trust</p>
+                                    <div class="stratton-hero-cta">
+                                        <a class="thm-btn" href="services.php"><span class="txt">Explore Our Services</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -57,12 +63,15 @@
                                     </div>
                                     <div class="title stratton-slide-title">
                                         <h2>
-                                            INTEGRITY. <br>
-                                            <span class="icon-right-arrow-1"></span> VIGILANCE. <br>
-                                            FORCE.
+                                            INTEGRITY.<br>
+                                            <span class="icon-right-arrow-1"></span> VIGILANCE.<br>
+                                            EXCELLENCE.
                                         </h2>
                                     </div>
                                     <p class="stratton-hero-tagline">// In God We Trust</p>
+                                    <div class="stratton-hero-cta">
+                                        <a class="thm-btn" href="about.php"><span class="txt">Learn About Us</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
