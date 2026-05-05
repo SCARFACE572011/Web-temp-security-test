@@ -5,10 +5,11 @@
                     <div class="footer-one__inner">
                         <div class="logo-box text-center">
                             <a href="index.php" class="stratton-logo stratton-logo--footer" aria-label="Stratton Security Group">
-                                <span class="stratton-logo__mark">S</span>
+                                <img src="assets/images/stratton/stratton-logo.png" alt="Stratton Security Group" class="stratton-logo__img stratton-logo__img--footer">
                                 <span class="stratton-logo__text">
                                     <strong>STRATTON</strong>
                                     <em>Security · Group</em>
+                                    <small class="stratton-tagline">In God We Trust</small>
                                 </span>
                             </a>
                         </div>

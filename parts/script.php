@@ -22,3 +22,4 @@
 
     <!-- Template js -->
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/stratton-animate.js"></script>

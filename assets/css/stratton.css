@@ -830,3 +830,230 @@ section p, .stratton-prose p { color: #b8bec7; }
   .counter-one__single h2 { font-size: 44px !important; }
   .slogan-one__content-box { flex-direction: column; text-align: center; }
 }
+
+/* ============================================================
+   LOGO IMAGE + TAGLINE
+   ============================================================ */
+
+/* Remove the text "S" mark when the image logo is present */
+.stratton-logo:has(.stratton-logo__img) .stratton-logo__mark { display: none; }
+
+.stratton-logo__img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  flex: 0 0 58px;
+  border-radius: 50%;
+  animation: logoGlow 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.15));
+}
+
+.stratton-logo__img--footer {
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+}
+
+.stratton-tagline {
+  display: block;
+  font-family: var(--mono);
+  font-size: 8px;
+  font-style: italic;
+  letter-spacing: 0.28em;
+  color: var(--red-bright);
+  text-transform: uppercase;
+  margin-top: 3px;
+  line-height: 1;
+}
+
+.stratton-logo--footer .stratton-tagline { color: rgba(209,26,26,0.85); }
+
+@keyframes logoGlow {
+  0%, 100% { filter: drop-shadow(0 0 6px rgba(255,255,255,0.12)); }
+  50%       { filter: drop-shadow(0 0 14px rgba(255,255,255,0.38)); }
+}
+
+/* ============================================================
+   HERO: LOGO BADGE + TAGLINE
+   ============================================================ */
+
+.stratton-hero-logo-badge {
+  display: inline-block;
+  margin-bottom: 28px;
+  opacity: 0;
+  transform: scale(0.7) rotate(-8deg);
+  animation: heroBadgeIn 1s cubic-bezier(0.22,1,0.36,1) 0.3s forwards;
+}
+
+.stratton-hero-logo-badge img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 24px rgba(0,0,0,0.7)) drop-shadow(0 0 32px rgba(209,26,26,0.35));
+}
+
+@keyframes heroBadgeIn {
+  to { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+.stratton-hero-tagline {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.38em;
+  color: rgba(255,255,255,0.72);
+  text-transform: uppercase;
+  margin-top: 28px;
+  padding-left: 14px;
+  border-left: 3px solid var(--red);
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: heroTaglineIn 0.9s ease 1.1s forwards;
+}
+
+@keyframes heroTaglineIn {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Re-trigger on slide change via active-slide class added in JS */
+.swiper-slide-active .stratton-hero-logo-badge {
+  animation: heroBadgeIn 1s cubic-bezier(0.22,1,0.36,1) 0.15s forwards;
+}
+.swiper-slide-active .stratton-hero-tagline {
+  animation: heroTaglineIn 0.9s ease 0.7s forwards;
+}
+.swiper-slide:not(.swiper-slide-active) .stratton-hero-logo-badge,
+.swiper-slide:not(.swiper-slide-active) .stratton-hero-tagline {
+  opacity: 0;
+}
+
+/* Hero title entrance */
+.stratton-slide-title h2 {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: heroTitleIn 1s cubic-bezier(0.22,1,0.36,1) 0.6s forwards;
+}
+.swiper-slide-active .stratton-slide-title h2 {
+  animation: heroTitleIn 1s cubic-bezier(0.22,1,0.36,1) 0.4s forwards;
+}
+.swiper-slide:not(.swiper-slide-active) .stratton-slide-title h2 { opacity: 0; }
+
+@keyframes heroTitleIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   HERO PARTICLES (animated dots overlay)
+   ============================================================ */
+
+.stratton-hero-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.stratton-hero-particles::before,
+.stratton-hero-particles::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  animation: particleDrift 18s ease-in-out infinite alternate;
+}
+
+.stratton-hero-particles::before {
+  width: 340px; height: 340px;
+  top: -80px; left: -80px;
+  background: radial-gradient(circle, rgba(209,26,26,0.14) 0%, transparent 70%);
+  animation-duration: 14s;
+}
+
+.stratton-hero-particles::after {
+  width: 500px; height: 500px;
+  bottom: -120px; right: -100px;
+  background: radial-gradient(circle, rgba(209,26,26,0.10) 0%, transparent 65%);
+  animation-duration: 20s;
+  animation-delay: -6s;
+}
+
+@keyframes particleDrift {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(60px, 30px) scale(1.08); }
+  66%  { transform: translate(20px, -40px) scale(0.95); }
+  100% { transform: translate(80px, 20px) scale(1.05); }
+}
+
+/* Animated scanning line across hero */
+.stratton-hero::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(209,26,26,0.6), transparent);
+  z-index: 4;
+  animation: scanLine 6s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scanLine {
+  0%   { top: 0%; opacity: 0; }
+  5%   { opacity: 1; }
+  95%  { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* ============================================================
+   SCROLL-REVEAL ANIMATIONS
+   ============================================================ */
+
+.sr-fadeup {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1), transform 0.75s cubic-bezier(0.22,1,0.36,1);
+}
+
+.sr-fadeup.sr-visible { opacity: 1; transform: translateY(0); }
+
+.sr-fadeleft {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1), transform 0.75s cubic-bezier(0.22,1,0.36,1);
+}
+
+.sr-fadeleft.sr-visible { opacity: 1; transform: translateX(0); }
+
+.sr-faderight {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1), transform 0.75s cubic-bezier(0.22,1,0.36,1);
+}
+
+.sr-faderight.sr-visible { opacity: 1; transform: translateX(0); }
+
+/* Stagger delay helpers */
+.sr-delay-1 { transition-delay: 0.10s !important; }
+.sr-delay-2 { transition-delay: 0.22s !important; }
+.sr-delay-3 { transition-delay: 0.34s !important; }
+.sr-delay-4 { transition-delay: 0.46s !important; }
+.sr-delay-5 { transition-delay: 0.58s !important; }
+.sr-delay-6 { transition-delay: 0.70s !important; }
+
+/* Pulse accent on counter numbers */
+@keyframes pulseAccent {
+  0%, 100% { text-shadow: 0 0 0 rgba(255,255,255,0); }
+  50%       { text-shadow: 0 0 28px rgba(255,255,255,0.25); }
+}
+.counter-one__single h2 { animation: pulseAccent 3.5s ease-in-out infinite; }
+
+/* Subtle continuous glow on the hero hazard strip */
+@keyframes hazardPulse {
+  0%, 100% { opacity: 0.8; }
+  50%       { opacity: 1; filter: brightness(1.3); }
+}
+.stratton-hero::after { animation: hazardPulse 2.5s ease-in-out infinite; }
+
+@media (max-width: 767px) {
+  .stratton-hero-logo-badge img { width: 80px; height: 80px; }
+  .stratton-hero-tagline { font-size: 10px; letter-spacing: 0.24em; }
+  .stratton-logo__img { width: 46px; height: 46px; }
+}

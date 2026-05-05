@@ -13,10 +13,11 @@
                                 <div class="main-header-one__middle">
                                     <div class="logo-box-one">
                                         <a href="index.php" class="stratton-logo" aria-label="Stratton Security Group">
-                                            <span class="stratton-logo__mark">S</span>
+                                            <img src="assets/images/stratton/stratton-logo.png" alt="Stratton Security Group" class="stratton-logo__img">
                                             <span class="stratton-logo__text">
                                                 <strong>STRATTON</strong>
                                                 <em>Security · Group</em>
+                                                <small class="stratton-tagline">In God We Trust</small>
                                             </span>
                                         </a>
                                     </div>
