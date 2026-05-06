@@ -1,4 +1,9 @@
 <?php $head_title="Services | Stratton Security Group"?>
+<?php $meta_description="Explore Stratton Security Group's professional security services: estate protection, commercial real estate, hotel security, transit stations, distribution, and surveillance technology."?>
+<?php $og_image="https://strattonsecuritygroup.com/assets/images/stratton/corporate-corridor.jpg"?>
+<?php $page_url="https://strattonsecuritygroup.com/services"?>
+<?php $robots_meta="index,follow"?>
+<?php $schema_json='{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://strattonsecuritygroup.com/services","name":"Security Services | Stratton Security Group","description":"Professional security solutions: estate protection, commercial real estate, hotel security, transit, distribution, and technology integration.","url":"https://strattonsecuritygroup.com/services","isPartOf":{"@id":"https://strattonsecuritygroup.com/#website"}}'?>
 <?php require_once('parts/layout/top-layout.php'); ?>
 <?php require_once('parts/header/header3.php'); ?>
 <?php $page_title = "Our Services"; require_once('parts/page-title.php'); ?>

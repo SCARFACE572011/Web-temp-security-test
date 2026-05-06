@@ -1,4 +1,9 @@
 <?php $head_title="About | Stratton Security Group"?>
+<?php $meta_description="Learn about Stratton Security Group's mission, core values, and team. Protecting California businesses and residences with licensed officers and cutting-edge security technology."?>
+<?php $og_image="https://strattonsecuritygroup.com/assets/images/stratton/officer-ready.jpg"?>
+<?php $page_url="https://strattonsecuritygroup.com/about"?>
+<?php $robots_meta="index,follow"?>
+<?php $schema_json='{"@context":"https://schema.org","@type":"AboutPage","@id":"https://strattonsecuritygroup.com/about","name":"About Stratton Security Group","description":"Learn about Stratton Security Group mission, core values, and team.","url":"https://strattonsecuritygroup.com/about","isPartOf":{"@id":"https://strattonsecuritygroup.com/#website"}}'?>
 <?php require_once('parts/layout/top-layout.php'); ?>
 <?php require_once('parts/header/header3.php'); ?>
 <?php $page_title = "About Us"; require_once('parts/page-title.php'); ?>

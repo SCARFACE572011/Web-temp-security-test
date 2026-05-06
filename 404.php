@@ -1,4 +1,9 @@
 <?php $head_title="Page Not Found | Stratton Security Group"?>
+<?php $meta_description="The page you're looking for doesn't exist. Return to Stratton Security Group's homepage."?>
+<?php $og_image="https://strattonsecuritygroup.com/assets/images/stratton/exec-protection.jpg"?>
+<?php $page_url="https://strattonsecuritygroup.com/404"?>
+<?php $robots_meta="noindex,nofollow"?>
+<?php $schema_json='{"@context":"https://schema.org","@type":"WebPage","@id":"https://strattonsecuritygroup.com/404","name":"Page Not Found","url":"https://strattonsecuritygroup.com/404"}'?>
 <?php require_once('parts/layout/top-layout.php'); ?>
 <?php require_once('parts/header/header3.php'); ?>
 

@@ -1,4 +1,9 @@
 <?php $head_title="Contact | Stratton Security Group"?>
+<?php $meta_description="Contact Stratton Security Group in Los Angeles, CA. Call (424) 440-5554 or email us for a free security consultation. Available 24/7."?>
+<?php $og_image="https://strattonsecuritygroup.com/assets/images/stratton/boardroom.jpg"?>
+<?php $page_url="https://strattonsecuritygroup.com/contact"?>
+<?php $robots_meta="index,follow"?>
+<?php $schema_json='{"@context":"https://schema.org","@type":"ContactPage","@id":"https://strattonsecuritygroup.com/contact","name":"Contact Stratton Security Group","description":"Contact Stratton Security Group for a security consultation. Available 24/7.","url":"https://strattonsecuritygroup.com/contact","isPartOf":{"@id":"https://strattonsecuritygroup.com/#website"}}'?>
 <?php require_once('parts/layout/top-layout.php'); ?>
 <?php require_once('parts/header/header3.php'); ?>
 <?php $page_title = "Get in Touch"; require_once('parts/page-title.php'); ?>
